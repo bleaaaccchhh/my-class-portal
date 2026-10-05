@@ -1,1 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jonny Greenwood | Semantic HTML5 Recode</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="sr-only skip-link" href="#main">Skip to main content</a>
+  <div class="wrapper">
+  <header>
+    <h1>Jonny Greenwood</h1>
+    <p>A semantic HTML5 recode of the <a href="https://en.wikipedia.org/wiki/Jonny_Greenwood">Wikipedia article</a>.</p>
+    <p><a href="../index.html">Back to class portal</a></p>
+  </header>
 
+  <nav aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Contents</h2>
+    <ul>
+      <li><a href="#intro">Introduction</a></li>
+      <li><a href="#early-life">Early life</a></li>
+      <li><a href="#career">Career</a>
+        <ul>
+          <li><a href="#radiohead-1990s">Radiohead breakthrough, 1990s</a></li>
+          <li><a href="#experimental-2000s">Experimentation and composing, 2000s</a></li>
+          <li><a href="#collaborations-2010s">Collaborations, 2010s</a></li>
+          <li><a href="#recent">The Smile and recent work, 2020s</a></li>
+        </ul>
+      </li>
+      <li><a href="#musicianship">Musicianship</a></li>
+      <li><a href="#influences">Influences</a></li>
+      <li><a href="#personal-life">Personal life</a></li>
+      <li><a href="#discography">Selected discography</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <article>
+      <section id="intro" aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="sr-only">Introduction</h2>
+        <figure>
+          <img src="jonny.jpg" alt="Jonny Greenwood performing on stage with Radiohead in 2025" width="800" height="959">
+          <figcaption>Greenwood performing with Radiohead in 2025.</figcaption>
+        </figure>
+        <p>Jonathan Richard Guy Greenwood (born 5 November 1971) is an English musician who is the lead guitarist of the rock band Radiohead. He has also composed numerous film scores. He has been named one of the greatest guitarists by multiple publications.</p>
+        <p>Greenwood formed Radiohead at school with friends and his elder brother, Colin. Their debut single, "Creep" (1992), featured Greenwood's aggressive guitar work. He described his role in Radiohead as an arranger, helping transform Thom Yorke's demos into finished songs. Radiohead have sold more than 30 million albums, and Greenwood was inducted into the Rock and Roll Hall of Fame as a member of the band in 2019.</p>
+        <p>Greenwood is a multi-instrumentalist and a player of the ondes Martenot, an early electronic instrument. The only classically trained member of Radiohead, he has composed for orchestras including the London Contemporary Orchestra and the BBC Concert Orchestra. In 2021, he debuted a new band, the Smile, with Yorke and the drummer Tom Skinner.</p>
+        <p>His first solo work was the soundtrack for the film <cite>Bodysong</cite> in 2003. In 2007, he scored <cite>There Will Be Blood</cite>, the first of several collaborations with the director Paul Thomas Anderson. He has been nominated for three Academy Awards, for <cite>Phantom Thread</cite>, <cite>The Power of the Dog</cite> and <cite>One Battle After Another</cite>.</p>
+        <aside aria-labelledby="facts-heading">
+          <h3 id="facts-heading">Quick facts</h3>
+          <dl>
+            <dt>Born</dt>
+            <dd>5 November 1971, Oxford, England</dd>
+            <dt>Occupations</dt>
+            <dd>Musician, composer</dd>
+            <dt>Instruments</dt>
+            <dd>Guitar, keyboards, ondes Martenot, bass</dd>
+            <dt>Years active</dt>
+            <dd>1985 to present</dd>
+            <dt>Member of</dt>
+            <dd>Radiohead, the Smile</dd>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="early-life" aria-labelledby="early-life-heading">
+        <h2 id="early-life-heading">Early life</h2>
+        <p>Jonny Greenwood was born in Oxford, England. His brother, the Radiohead bassist Colin Greenwood, is two years older. Their father served in the British Army as a bomb disposal expert. Jonny said the family was "not musical at all", but his parents supported the brothers by driving them to band rehearsals.</p>
+        <p>As a child, Greenwood's family listened to a small number of cassettes in the car, including Mozart's horn concertos, the musicals <cite>Flower Drum Song</cite> and <cite>My Fair Lady</cite>, and cover versions of Simon &amp; Garfunkel songs. He credited his older siblings with exposing him to rock bands such as the Beat and New Order. The first gig he attended was the Fall on their 1988 tour, which he found "overwhelming".</p>
+        <p>The Greenwood brothers attended Abingdon, a private boys' school. Greenwood's first instrument was a recorder given to him at age four or five, and he played baroque music in recorder groups as a teenager. He also played the viola in the Thames Vale youth orchestra, which he described as a formative experience. He spent time programming too, experimenting with BASIC and simple machine code to make computer games.</p>
+        <p>At Abingdon, the brothers formed a band, On a Friday, with the singer Thom Yorke, the guitarist Ed O'Brien and the drummer Philip Selway. Jonny, the youngest, was the last to join. He initially played harmonica and keyboards. As they had fired their previous keyboardist for playing too loudly, Greenwood spent his first months playing with his keyboard turned off. No one in the band realised, and Yorke told him he added an "interesting texture". He eventually became the lead guitarist.</p>
+        <p>In 1991, the members of On a Friday regrouped in Oxford. Greenwood enrolled at Oxford Brookes University to study psychology and music, but left after his first term when the band signed a record contract with EMI.</p>
+      </section>
+
+      <section id="career" aria-labelledby="career-heading">
+        <h2 id="career-heading">Career</h2>
+
+        <section id="radiohead-1990s" aria-labelledby="radiohead-1990s-heading">
+          <h3 id="radiohead-1990s-heading">Radiohead breakthrough, 1990s</h3>
+          <p>The band changed their name to Radiohead and released their first album, <cite>Pablo Honey</cite>, in 1993. They found early success with their debut single, "Creep", released in 1992. Radiohead's second album, <cite>The Bends</cite> (1995), brought them significant critical attention. On tour, Greenwood damaged his hearing and wore protective ear shields for some performances.</p>
+          <p>Radiohead's third album, <cite>OK Computer</cite> (1997), achieved acclaim, showcasing Greenwood's lead guitar work on songs such as "Paranoid Android". For "Climbing up the Walls", Greenwood wrote a part for 16 stringed instruments playing quarter tones apart, inspired by the Polish composer Krzysztof Penderecki.</p>
+        </section>
+
+        <section id="experimental-2000s" aria-labelledby="experimental-2000s-heading">
+          <h3 id="experimental-2000s-heading">Experimentation and composing, 2000s</h3>
+          <p>The albums <cite>Kid A</cite> (2000) and <cite>Amnesiac</cite> (2001) marked a dramatic change in sound, incorporating influences from electronica, classical music, jazz and krautrock. Greenwood employed a modular synthesiser to build the drum machine rhythm of "Idioteque", and played ondes Martenot on several tracks. For "How to Disappear Completely", he composed a string section by multitracking his ondes Martenot playing.</p>
+          <p>In 2003, Greenwood released his first solo work, the soundtrack for the documentary <cite>Bodysong</cite>. In May 2004, he was appointed composer-in-residence to the BBC Concert Orchestra. For the BBC he wrote "Popcorn Superhet Receiver" (2005), inspired by radio static and Penderecki's <cite>Threnody to the Victims of Hiroshima</cite>. He was named Composer of the Year by BBC Radio 3 for the piece.</p>
+          <p>Greenwood composed the score for the 2007 film <cite>There Will Be Blood</cite>, directed by Paul Thomas Anderson. Because it contains excerpts from "Popcorn Superhet Receiver", it was ineligible for an Academy Award. Radiohead released their seventh album, <cite>In Rainbows</cite>, in October 2007, in a landmark use of the pay-what-you-want model for music sales.</p>
+        </section>
+
+        <section id="collaborations-2010s" aria-labelledby="collaborations-2010s-heading">
+          <h3 id="collaborations-2010s-heading">Collaborations, 2010s</h3>
+          <p>Greenwood scored <cite>Norwegian Wood</cite> (2010), <cite>We Need to Talk About Kevin</cite> (2011), <cite>The Master</cite> (2012) and <cite>Inherent Vice</cite> (2014). In 2012, he and Penderecki released an album that paired Penderecki's 1960s compositions with Greenwood's "Popcorn Superhet Receiver" and a new work, "48 Responses to Polymorphia".</p>
+          <p>In 2015, Greenwood, the Israeli composer Shye Ben Tzur and the producer Nigel Godrich recorded an album, <cite>Junun</cite>, with the Rajasthan Express at Mehrangarh Fort in Rajasthan, India. Greenwood insisted they hire only musicians from Rajasthan and use only string instruments native to the region.</p>
+          <p>He contributed string orchestration to Frank Ocean's 2016 albums <cite>Endless</cite> and <cite>Blonde</cite>. His score for <cite>Phantom Thread</cite> (2017) was nominated for an Academy Award and earned his sixth Ivor Novello award. Greenwood was inducted into the Rock and Roll Hall of Fame with Radiohead in March 2019, but did not attend the ceremony.</p>
+        </section>
+
+        <section id="recent" aria-labelledby="recent-heading">
+          <h3 id="recent-heading">The Smile and recent work, 2020s</h3>
+          <p>For <cite>The Power of the Dog</cite> (2021), Greenwood played the cello in the style of a banjo. The score earned him a second Academy Award nomination. In 2021, he debuted a new band, the Smile, with Yorke and the jazz drummer Tom Skinner. Greenwood said the project was a way for him and Yorke to work together during the COVID-19 lockdowns. The Smile released their debut album, <cite>A Light for Attracting Attention</cite>, in May 2022.</p>
+          <p>In 2023, Greenwood and the Israeli musician Dudu Tassa released <cite>Jarak Qaribak</cite>, comprising reworkings of Middle Eastern love songs. Greenwood said he and Tassa had tried to imagine what Kraftwerk would have done if they had been in Cairo in the 1970s. The album and its related performances later drew political controversy.</p>
+          <p>The Smile released <cite>Wall of Eyes</cite> and <cite>Cutouts</cite> in 2024. That summer, Greenwood was temporarily hospitalised with a serious infection, and the band canceled a European tour. He scored his sixth film for Anderson, <cite>One Battle After Another</cite> (2025), which earned his third Academy Award nomination. In November 2025, Radiohead began a European tour, their first in seven years.</p>
+        </section>
+      </section>
+
+      <section id="musicianship" aria-labelledby="musicianship-heading">
+        <h2 id="musicianship-heading">Musicianship</h2>
+        <section aria-labelledby="guitar-heading">
+          <h3 id="guitar-heading">Guitar</h3>
+          <p>Greenwood is known for his aggressive playing style. He said he dislikes the reputation of guitars as something to be "admired or worshipped", and instead sees them as a tool like a typewriter or a vacuum cleaner. With Radiohead, his main amplifiers are a Vox AC30 and a Fender 85, and he has long used a Fender Telecaster Plus. He uses a killswitch to create a stuttering effect on songs such as "Airbag" and "Paranoid Android".</p>
+          <p>In 2008, <cite>Guitar World</cite> named his solo in "Paranoid Android" the 34th-greatest of all time. In 2023, <cite>Rolling Stone</cite> ranked him joint 43rd on its updated list of the greatest guitarists.</p>
+        </section>
+        <section aria-labelledby="ondes-heading">
+          <h3 id="ondes-heading">Ondes Martenot</h3>
+          <p>The ondes Martenot is an early electronic instrument played by moving a ring along a wire, creating sounds similar to a theremin. Greenwood called it "the most expressive electronic instrument that's ever been invented". He became interested in it at age 15 after hearing Olivier Messiaen's <cite>Turangalîla Symphony</cite>, and first used it on <cite>Kid A</cite>. Because production of the instrument ceased in 1988, he had a replica made to take on tour.</p>
+        </section>
+        <section aria-labelledby="electronics-heading">
+          <h3 id="electronics-heading">Electronics and composition</h3>
+          <p>At the suggestion of Nigel Godrich, Greenwood began using the music programming language Max. He found it liberating to create his own audio effects from scratch. He used Max to write the sampling software used to create <cite>The King of Limbs</cite>. He also uses a "home-made sound machine" of small hammers striking objects such as yoghurt cartons, bells and tambourines.</p>
+          <p>Many of his compositions are microtonal, and he often uses modes of limited transposition, particularly the octatonic scale. For "48 Responses to Polymorphia", he placed an oak leaf on a stave and wrote a part using the veins.</p>
+          <blockquote>
+            <p>Greenwood has said that he found it healthy to think about classical composers and rock bands in the same way, and that he loved Messiaen because the composer was still alive and writing.</p>
+            <footer>Paraphrase of Greenwood's 2010 remarks on classical and rock music</footer>
+          </blockquote>
+        </section>
+      </section>
+
+      <section id="influences" aria-labelledby="influences-heading">
+        <h2 id="influences-heading">Influences</h2>
+        <p>Greenwood admires the alternative rock bands Pavement, the Pixies and Sonic Youth. He said the guitarist who most influenced him was John McGeoch of Magazine.</p>
+        <p>He first heard Messiaen's <cite>Turangalîla Symphony</cite> at the age of 15 and became "round-the-bend-obsessed with it". He also admires Krzysztof Penderecki, and cited a concert of Penderecki's music in the early 1990s as a "conversion experience". He is a fan of the composers György Ligeti, Henri Dutilleux and Steve Reich, and cited Reich as an influence on the phasing guitars of "Let Down" and "Weird Fishes / Arpeggi". He was exposed to Middle Eastern music through his wife's family, and admires the rhythmic complexity of singers such as Abdel Halim Hafez.</p>
+      </section>
+
+      <section id="personal-life" aria-labelledby="personal-life-heading">
+        <h2 id="personal-life-heading">Personal life</h2>
+        <p>Greenwood is married to the Israeli visual artist Sharona Katan, whom he met in 1993 when Radiohead performed in Israel. Her work, credited as Shin Katan, appears on the covers of <cite>Junun</cite> and several of Greenwood's soundtracks. They have three children. Greenwood's family lives in Oxford and in Marche, Italy. In April 2023, he began selling olive oil produced on his farm in Italy through Radiohead's online shop.</p>
+      </section>
+
+      <section id="discography" aria-labelledby="discography-heading">
+        <h2 id="discography-heading">Selected discography</h2>
+        <table>
+          <caption>Selected film soundtrack albums by Jonny Greenwood</caption>
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Released</th>
+              <th scope="col">Label</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Bodysong</th><td>27 October 2003</td><td>Parlophone, Capitol, XL</td></tr>
+            <tr><th scope="row">There Will Be Blood</th><td>17 December 2007</td><td>Nonesuch</td></tr>
+            <tr><th scope="row">The Master</th><td>10 September 2012</td><td>Nonesuch</td></tr>
+            <tr><th scope="row">Inherent Vice</th><td>15 December 2014</td><td>Nonesuch</td></tr>
+            <tr><th scope="row">Phantom Thread</th><td>12 January 2018</td><td>Nonesuch, WEA</td></tr>
+            <tr><th scope="row">The Power of the Dog</th><td>17 November 2021</td><td>Lakeshore, Invada</td></tr>
+            <tr><th scope="row">One Battle After Another</th><td>26 September 2025</td><td>Nonesuch</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="sources" aria-labelledby="sources-heading">
+        <h2 id="sources-heading">Sources</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Jonny_Greenwood">Jonny Greenwood, Wikipedia</a> (original article, with full citations)</li>
+          <li><a href="https://www.npr.org/sections/allsongs/2016/08/04/488531531/all-songs-1-a-conversation-with-radioheads-jonny-greenwood">NPR, "All Songs +1: A conversation with Radiohead's Jonny Greenwood"</a></li>
+          <li><a href="https://www.theguardian.com/music/article/2024/may/10/jonny-greenwood-im-still-arsing-around-on-instruments-like-when-i-was-a-kid">The Guardian, interview with Jonny Greenwood (2024)</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Text adapted from Wikipedia and shortened, under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> license. Recoded as semantic HTML5 by Finn Stevens.</p>
+  </footer>
+  </div>
+</body>
+</html>
