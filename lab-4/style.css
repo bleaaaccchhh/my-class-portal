@@ -1,0 +1,314 @@
+/* ==========================================================
+   Lab #4: Accessible CSS Layout
+   Color scheme: from Adobe Color (replace these five hex codes
+   with your own saved theme from color.adobe.com if you like)
+   ========================================================== */
+:root {
+  --navy: #0b132b;
+  --slate: #1c2541;
+  --steel: #3a506b;
+  --teal: #5bc0be;
+  --mist: #f2f5f7;
+  --white: #ffffff;
+
+  /* Two Google fonts */
+  --heading-font: "Space Grotesk", Arial, Helvetica, sans-serif;
+  --body-font: "Source Serif 4", Georgia, "Times New Roman", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- Base styles (mobile first) ---------- */
+body {
+  margin: 0;
+  background-color: var(--mist);
+  color: var(--navy);
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+a {
+  color: var(--steel);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+
+/* Hidden visually but still read by screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Skip navigation: slides into view when you tab to it */
+.skip-link {
+  position: absolute;
+  top: -4rem;
+  left: 0;
+  z-index: 10;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--teal);
+  color: var(--navy);
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ---------- GRID: overall page layout ----------
+   Mobile = one column. Order on screen:
+   header, nav, facts, main, listen, footer             */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "facts"
+    "main"
+    "listen"
+    "footer";
+}
+
+header  { grid-area: header; }
+nav     { grid-area: nav; }
+main    { grid-area: main; }
+.facts  { grid-area: facts; }
+.listen { grid-area: listen; }
+footer  { grid-area: footer; }
+
+/* ---------- Header ---------- */
+header {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 2rem 1.25rem 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  color: var(--teal);
+  font-family: var(--heading-font);
+  font-size: 1.1rem;
+}
+
+/* ---------- FLEXBOX: nav links ----------
+   Mobile = vertical stack of big, thumb-able buttons    */
+nav {
+  background-color: var(--slate);
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  min-height: 3.25rem;            /* 52px: easy to tap with a thumb */
+  padding: 0.5rem 1.25rem;
+  background-color: var(--steel);
+  color: var(--white);
+  border-radius: 10px;
+  font-family: var(--heading-font);
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--teal);
+  color: var(--navy);
+}
+
+nav a:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 3px;
+}
+
+/* ---------- Main content ---------- */
+main {
+  padding: 1.5rem 1.25rem;
+}
+
+main section {
+  scroll-margin-top: 1rem;
+}
+
+main h2 {
+  margin: 1.5rem 0 0.5rem;
+  color: var(--slate);
+  font-size: 1.75rem;
+}
+
+main section:first-child h2 {
+  margin-top: 0;
+}
+
+main p {
+  max-width: 65ch;
+  margin: 0 0 1em;
+}
+
+/* ---------- Asides ---------- */
+aside {
+  margin: 1rem 1.25rem;
+  padding: 1.25rem;
+  background-color: var(--white);
+  border-left: 6px solid var(--teal);
+  border-radius: 0 10px 10px 0;
+  align-self: start;
+}
+
+aside h2 {
+  margin: 0 0 0.75rem;
+  color: var(--slate);
+  font-size: 1.3rem;
+}
+
+aside p {
+  margin: 0 0 0.5em;
+}
+
+aside ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+aside li {
+  margin-bottom: 0.4rem;
+}
+
+dt {
+  color: var(--steel);
+  font-family: var(--heading-font);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 0 0.75rem;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  padding: 1.5rem 1.25rem;
+  background-color: var(--navy);
+  color: var(--mist);
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ==========================================================
+   TABLET (640px and wider): two columns.
+   Main on the left, both asides stacked on the right.
+   Nav links switch from vertical to horizontal.
+   ========================================================== */
+@media (min-width: 40em) {
+  body {
+    grid-template-columns: 1fr 17rem;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-areas:
+      "header header"
+      "nav    nav"
+      "main   facts"
+      "main   listen"
+      "footer footer";
+  }
+
+  header {
+    padding: 2.5rem 2rem 2rem;
+  }
+
+  header h1 {
+    font-size: 3.25rem;
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    padding: 0.5rem 1.5rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  aside {
+    margin: 1.5rem 2rem 0 0;
+  }
+}
+
+/* ==========================================================
+   DESKTOP (1024px and wider): three columns.
+   Facts on the left, main in the middle, listen on the right.
+   ========================================================== */
+@media (min-width: 64em) {
+  body {
+    grid-template-columns: 16rem minmax(0, 1fr) 16rem;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "nav    nav    nav"
+      "facts  main   listen"
+      "footer footer footer";
+  }
+
+  header,
+  nav {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  main {
+    padding: 2rem 2.5rem;
+  }
+
+  aside {
+    margin: 2rem 0 0 2rem;
+  }
+
+  .listen {
+    margin: 2rem 2rem 0 0;
+  }
+}
