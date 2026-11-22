@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to build it</title>
+<meta name="description" content="Why universal design matters, what it is, and how to build it into the web.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to main content</a>
+<header>
+<a class="logo" href="index.html">Design for everyone</a>
+<nav aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="why.html">Why</a></li><li><a href="what.html">What</a></li><li><a href="how.html" aria-current="page">How</a></li></ul></nav>
+</header>
+<main id="main">
+<h1>How</h1>
+<p class="lede">Most accessibility is good HTML and CSS used on purpose.</p>
+<h2>Use semantic HTML</h2>
+<p>Use <code>header</code>, <code>nav</code>, <code>main</code>, headings in order, real buttons and links.</p>
+<h2>Describe images</h2>
+<pre><code>&lt;img src="band.jpg" alt="Four musicians on a dim stage"&gt;</code></pre>
+<h2>Check color contrast</h2>
+<p>Body text needs a 4.5:1 ratio against its background under WCAG AA.</p>
+<h2>Make it keyboard friendly</h2>
+<p>Add a skip link, keep a visible focus outline, and keep tab order logical.</p>
+<h2>Build mobile first</h2>
+<p>Write base CSS for phones, then add <code>min-width</code> media queries for larger screens.</p>
+<h2>Test it</h2>
+<p>Run the Nu validator, WAVE, and Lighthouse, then listen with VoiceOver.</p>
+<p class="note">Draft: add code examples for forms, tables, and ARIA.</p>
+</main>
+<footer>
+<p>Finn Stevens &middot; ATLS 3150 &middot; Fall 2026 &middot; <a href="../index.html">Back to class portal</a></p>
+</footer>
+</body>
+</html>
